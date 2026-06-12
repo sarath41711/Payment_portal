@@ -14,4 +14,3 @@ Voice Command Support: Actions can be carried out by users using voice commands.
 Eye-Controlled Mouse: Eye tracking allows you to navigate without using your hands.
 Computer Vision Integration: Uses a webcam to control the available selections.
 
-This Project is do my me and u can see this project in other areas 
