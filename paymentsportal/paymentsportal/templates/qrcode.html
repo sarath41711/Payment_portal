@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+        <div class="my">
+        <form method="post">
+            {% csrf_token %}
+            <label for="upi_id">Enter UPI ID:</label>
+            <input type="text" id="upi_id" name="upi_id" required>
+            <label for="amount">Enter Amount (optional):</label>
+            <input type="text" id="amount" name="amount">
+            <button type="submit">Generate QR Code</button>
+        </form>
+        </div>
+        <div class="qr-container">
+            {% if qr_image %}
+                <h2>Generated QR Code:</h2>
+                <img src="data:image/png;base64,{{ qr_image }}" alt="QR Code">
+            {% endif %}
+        </div>
+        
+        
+        {% endblock %}

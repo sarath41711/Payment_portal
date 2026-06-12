@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Page</title>
+</head>
+<body>
+    <h1>Reading Page</h1>
+    <p>{{ content }}</p>
+    {% if audio_file %}
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    {% else %}
+        <p>No audio available.</p>
+    {% endif %}
+</body>
+</html>

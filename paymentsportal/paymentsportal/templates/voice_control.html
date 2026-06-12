@@ -1,0 +1,18 @@
+<!-- templates/voice_control.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Control</title>
+</head>
+<body>
+    <!-- voice_command.html -->
+<h1>Voice Command Page</h1>
+<form method="POST" action="{% url 'voice_control' %}">
+    {% csrf_token %}
+    <button type="submit">Start Voice Command</button>
+</form>
+<p id="result"></p>
+
+</body>
+</html>
